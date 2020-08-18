@@ -19,6 +19,7 @@ import GalleryRound from '../../Assets/icons/hotel-badge.svg';
 
 // SCSS
 import "./Landing.scss";
+import { render } from '@testing-library/react';
 
 
 export default class Landing extends Component {
@@ -83,15 +84,37 @@ export default class Landing extends Component {
 <p >{(() => {
         if (i18n.language == 'KA') {
           return (
-            arrayLanding.exploring.description_ge
+            <div>
+              <p style={{margin: "0", padding: "0"}}>{arrayLanding.exploring.description_ge.slice(0, 50) + "..."}</p>
+              <a style={{"cursor": "pointer"}} onClick={(event) => extendCollapsetext(event, arrayLanding.exploring.description_ge)}>→</a>
+            </div>
           )
         } else if (i18n.language === 'RU') {
           return (
-            arrayLanding.exploring.description_ru
+            <div>
+              <p style={{margin: "0", padding: "0"}}>{arrayLanding.exploring.description_ru.slice(0, 50) + "..."}</p>
+              <a style={{"cursor": "pointer"}} onClick={(event) => extendCollapsetext(event, arrayLanding.exploring.description_ru)}>→</a>
+            </div>
           )
         } else {
           return (
-            arrayLanding.exploring.description_en
+            <div>
+              <p style={{margin: "0", padding: "0"}}>{arrayLanding.exploring.description_en.slice(0, 50) + "..."}</p>
+              <a style={{"cursor": "pointer"}} onClick={(event) => extendCollapsetext(event, arrayLanding.exploring.description_en)}>→</a>
+              {/* <a onClick={(event) => {
+                console.log("hey")
+                if (event.target.innerHTML == "→"){
+                  event.target.innerHTML = "←"
+                  event.target.previousSibling.innerHTML = `${arrayLanding.exploring.description_en}`
+                }
+                else {
+                  event.target.innerHTML = "→"
+                  event.target.previousSibling.innerHTML = `${arrayLanding.exploring.description_en.slice(0, 50) + "..."}`
+                }
+              }
+                
+                }>→</a> */}
+            </div>
           )
         }
       })()}</p>
@@ -114,15 +137,25 @@ export default class Landing extends Component {
 <p className="elipsis-9">{(() => {
         if (i18n.language === 'KA') {
           return (
-            arrayLanding.gallery.description_ge
+            <div>
+              <p style={{margin: "0", padding: "0"}}>{arrayLanding.gallery.description_ge.slice(0, 50) + "..."}</p>
+              <a style={{"cursor": "pointer"}} onClick={(event) => extendCollapsetext(event, arrayLanding.gallery.description_ge)}>→</a>
+            </div>
           )
+            {/* arrayLanding.gallery.description_ge */}
         } else if (i18n.language === 'RU') {
           return (
-            arrayLanding.gallery.description_ru
+            <div>
+              <p style={{margin: "0", padding: "0"}}>{arrayLanding.gallery.description_ru.slice(0, 50) + "..."}</p>
+              <a style={{"cursor": "pointer"}} onClick={(event) => extendCollapsetext(event, arrayLanding.gallery.description_ru)}>→</a>
+            </div>
           )
         } else {
           return (
-            arrayLanding.gallery.description_en
+            <div>
+              <p style={{margin: "0", padding: "0"}}>{arrayLanding.gallery.description_en.slice(0, 50) + "..."}</p>
+              <a style={{"cursor": "pointer"}} onClick={(event) => extendCollapsetext(event, arrayLanding.gallery.description_en)}>→</a>
+            </div>
           )
         }
       })()}</p>
@@ -186,15 +219,25 @@ export default class Landing extends Component {
                 <p className="eats-paragraph elipsis-7">{(() => {
         if (i18n.language === 'KA') {
           return (
-            arrayLanding.eat_drinks.description_ge
+            <div>
+              <p style={{margin: "0", padding: "0"}}>{arrayLanding.eat_drinks.description_ge.slice(0, 50) + "..."}</p>
+              <a style={{"cursor": "pointer"}} onClick={(event) => extendCollapsetext(event, arrayLanding.eat_drinks.description_ge)}>→</a>
+            </div>
           )
+            {/* arrayLanding.eat_drinks.description_ge */}
         } else if (i18n.language === 'RU') {
           return (
-            arrayLanding.eat_drinks.description_ru
+            <div>
+              <p style={{margin: "0", padding: "0"}}>{arrayLanding.eat_drinks.description_ru.slice(0, 50) + "..."}</p>
+              <a style={{"cursor": "pointer"}} onClick={(event) => extendCollapsetext(event, arrayLanding.eat_drinks.description_ru)}>→</a>
+            </div>
           )
         } else {
           return (
-            arrayLanding.eat_drinks.description_en
+            <div>
+              <p style={{margin: "0", padding: "0"}}>{arrayLanding.eat_drinks.description_en.slice(0, 50) + "..."}</p>
+              <a style={{"cursor": "pointer"}} onClick={(event) => extendCollapsetext(event, arrayLanding.eat_drinks.description_en)}>→</a>
+            </div>
           )
         }
       })()}</p>
@@ -239,15 +282,25 @@ export default class Landing extends Component {
               <p className="elipsis-7">{(() => {
         if (i18n.language === 'KA') {
           return (
-            arrayLanding.neighborhood.description_ge
+            <div>
+              <p style={{margin: "0", padding: "0"}}>{arrayLanding.neighborhood.description_ge.slice(0, 50) + "..."}</p>
+              <a style={{"cursor": "pointer"}} onClick={(event) => extendCollapsetext(event, arrayLanding.neighborhood.description_ge)}>→</a>
+            </div>
           )
+            {/* arrayLanding.neighborhood.description_ge */}
         } else if (i18n.language === 'RU') {
           return (
-            arrayLanding.neighborhood.description_ru
+            <div>
+              <p style={{margin: "0", padding: "0"}}>{arrayLanding.neighborhood.description_ru.slice(0, 50) + "..."}</p>
+              <a style={{"cursor": "pointer"}} onClick={(event) => extendCollapsetext(event, arrayLanding.neighborhood.description_ru)}>→</a>
+            </div>
           )
         } else {
           return (
-            arrayLanding.neighborhood.description_en
+            <div>
+              <p style={{margin: "0", padding: "0"}}>{arrayLanding.neighborhood.description_en.slice(0, 50) + "..."}</p>
+              <a style={{"cursor": "pointer"}} onClick={(event) => extendCollapsetext(event, arrayLanding.neighborhood.description_en)}>→</a>
+            </div>
           )
         }
       })()}</p>
@@ -263,4 +316,15 @@ export default class Landing extends Component {
     </>
   );
 }
+}
+
+const extendCollapsetext = (event, text) => {
+  if (event.target.innerHTML == "→"){
+    event.target.innerHTML = "←"
+    event.target.previousSibling.innerHTML = `${text}`
+  }
+  else {
+    event.target.innerHTML = "→"
+    event.target.previousSibling.innerHTML = `${text.slice(0, 50) + "..."}`
+  }
 }
