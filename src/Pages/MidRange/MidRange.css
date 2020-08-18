@@ -1,0 +1,53 @@
+.midrange-credit__btn {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 30px;
+  color: #000000;
+  padding: 25px 48px;
+  background-color: #B9AD93;
+  border: 1px solid #000000;
+  text-transform: uppercase;
+  margin-bottom: 10rem;
+}
+
+.midrange-credit__btn:hover {
+  color: #FDE6A6;
+  background: #000000;
+  border: 1px solid #FDE6A6;
+}
+
+.midrange-swiper {
+  height: 64vh;
+}
+
+.midrange-swiper .luxury-swiper__controller {
+  right: 5rem !important;
+  bottom: 0 !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+
+.midrange-swiper .luxury-prev {
+  background-image: url("../../Assets/icons/midrange-arrow-left.svg") !important;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.midrange-swiper .luxury-next {
+  background-image: url("../../Assets/icons/midrange-arrow-right.svg") !important;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=MidRange.css.map */
