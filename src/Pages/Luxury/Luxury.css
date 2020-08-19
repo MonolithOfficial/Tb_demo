@@ -3,6 +3,10 @@
   overflow: hidden;
 }
 
+.luxury .swiper-button-prev, .luxury .swiper-button-next {
+  display: none !important;
+}
+
 .luxury-absolute {
   position: absolute;
   background: #F8F7F4;
@@ -39,7 +43,11 @@
 }
 
 .swiper-button-prev, .swiper-button-next {
-  display: none !important;
+  display: block !important;
+  border: none;
+  color: white;
+  text-align: center;
+  background: rgba(100, 100, 100, 0) no-repeat center center fixed;
 }
 
 .swiper-container-horizontal > .swiper-pagination-progressbar, .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {

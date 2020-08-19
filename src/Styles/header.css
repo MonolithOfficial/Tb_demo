@@ -1,6 +1,6 @@
 .header {
   height: auto;
-  z-index: 10;
+  z-index: 5;
   padding: 1.2rem;
   position: absolute;
   width: 100%;
@@ -52,7 +52,7 @@
 }
 
 .header-black {
-  z-index: 10;
+  z-index: 5;
 }
 
 .book-now {

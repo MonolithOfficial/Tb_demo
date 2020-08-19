@@ -16,6 +16,10 @@
   left: 1% !important;
 }
 
+.goNext {
+  z-index: 11;
+}
+
 .carousel-title {
   font-size: 9rem;
   font-weight: bold;

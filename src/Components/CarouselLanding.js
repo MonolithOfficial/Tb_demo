@@ -1,7 +1,6 @@
 // import Swiper core and required components
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../Styles/common.scss';
 
@@ -23,20 +22,27 @@ export default (props) => {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
-    }
+    },
+    // renderPrevButton: () => <button className="swiper-button-prev">Prev</button>,
+    // renderNextButton: () => <button className="swiper-button-next">Next</button>
   }
   return (
     <Swiper {...params}
       slidesPerView = {1}  
     >
+    <button className="swiper-button-next"></button> 
+    <button className="swiper-button-prev"></button> 
        
       {
         sliders.map((slide,index) => {           
          return (        
-           <>            
-        <SwiperSlide>                    
+           <>      
+           
+        <SwiperSlide>   
+                     
             <Link to={"/" + slide.link} className="landing-open__btn">{t('open')}</Link>
             <div className="background-image__cover height" style={{backgroundImage: `url(${Tbilisee + slide.background})`}}>
+              
               <img className="door" src={Tbilisee + slide.door} alt="Door"/>
             </div>
         </SwiperSlide>

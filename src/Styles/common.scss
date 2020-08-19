@@ -99,6 +99,11 @@ a {
     margin: auto;
 }
 
+.goNext {
+    position: absolute;
+    z-index: 6;
+}
+
 @media(max-width: 1700px) {
     .container-own {
         width: 1500px;
